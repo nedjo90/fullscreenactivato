@@ -20,9 +20,13 @@ toggleCameraButton.addEventListener("click", (e) => {
   navigator.mediaDevices
     .getUserMedia({
       video: {
-        width: { ideal: window.innerWidth },
-        height: { ideal: window.innerHeight },
-      }
+        width:{
+          min: screen.width,
+        },
+        height:{
+          min: screen.height
+        }
+      },
       },
     )
     .then((stream) => {

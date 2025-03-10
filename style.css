@@ -27,8 +27,6 @@ body {
 .myCamera {
   position: absolute;
   z-index: 0;
-  height: 100dvh; /* Utiliser la hauteur dynamique du viewport */
-  object-fit: cover;
 }
 
 /* .fullscreen {
