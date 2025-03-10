@@ -27,6 +27,7 @@ body {
 .myCamera {
   position: absolute;
   z-index: 0;
+  transform: scaleX(-1);
 }
 
 /* .fullscreen {
