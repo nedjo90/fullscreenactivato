@@ -1,0 +1,36 @@
+html,
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.button {
+  /* position: fixed; */
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.cameraVisibility {
+  visibility: hidden;
+}
+
+.quitCameraButton {
+  position: absolute;
+  z-index: 2147483647;
+}
+.myCamera {
+  position: absolute;
+  z-index: 0;
+}
+
+/* .fullscreen {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+} */
