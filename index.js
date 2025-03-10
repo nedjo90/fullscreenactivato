@@ -19,7 +19,10 @@ toggleCameraButton = document.getElementById("toggleCameraButton");
 toggleCameraButton.addEventListener("click", (e) => {
   navigator.mediaDevices
     .getUserMedia({
-      video: "true"
+      video: {
+        width: { ideal: window.innerWidth },
+        height: { ideal: window.innerHeight },
+      }
       },
     )
     .then((stream) => {
