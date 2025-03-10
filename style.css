@@ -26,8 +26,11 @@ body {
 }
 .myCamera {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  object-fit: contain;
   z-index: 0;
-  transform: scaleX(-1);
+  transform: translate(-50%, -50%) scaleX(-1);
 }
 
 /* .fullscreen {

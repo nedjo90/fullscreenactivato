@@ -20,16 +20,17 @@ toggleCameraButton.addEventListener("click", (e) => {
   navigator.mediaDevices
     .getUserMedia({
       video: {
-        width:{
+        width: {
           min: screen.width,
         },
-        height:{
-          min: screen.height
-        }
+        height: {
+          min: screen.height,
+        },
       },
-      },
-    )
+    })
     .then((stream) => {
+      console.log(screen.width);
+      console.log(screen.height);
       video.srcObject = stream;
       video.style.visibility = "visible";
       quitButton.style.visibility = "visible";
